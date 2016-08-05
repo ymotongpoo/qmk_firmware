@@ -23,4 +23,3 @@ deploy:
         name: publish uploaded hex file.
         code: |
           curl -X POST -u$BINTRAY_USERNAME:$BINTRAY_APIKEY https://api.bintray.com/content/$BINTRAY_USERNAME/generic/ergodox.hex/$WERCKER_GIT_BRANCH-$WERCKER_GIT_COMMIT/publish
-          curl -H 'Authorization: Bearer <TOKEN>' https://app.wercker.com/api/v3/applications/sugiharasan/qmk_firmware
