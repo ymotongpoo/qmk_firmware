@@ -12,7 +12,7 @@ build:
         name: move built firmware to output dir.
         cwd: $WERCKER_SOURCE_DIR/.build
         code: |
-          mv lets_split_$TARGET_KEYMAP.hex $WERCKER_OUTPUT_DIR/lets_split.hex
+          mv lets_split_rev2_$TARGET_KEYMAP.hex $WERCKER_OUTPUT_DIR/lets_split.hex
 deploy:
   steps:
     - script:
